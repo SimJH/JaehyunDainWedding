@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "swiper {\r\n  height: 500px;\r\n  width: 100%;\r\n}\r\n", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<div class=\"sameHeight\">\n  <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n    <div style=\"text-align:center\">\n      <h1>\n        My Dain !\n      </h1>\n      <img width=\"300\" src=\"https://cdn.pixabay.com/photo/2017/01/20/08/41/hearts-1994273_960_720.png\">\n    </div>\n  </div>\n  <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6 typingArea\">\n    <span typingAnimation [typeSpeed]=\"35\" [startDelay]=\"1000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ For Her\n    </span>\n    <br />\n    <span class=\"padding15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"2000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ I love you\n    </span>\n    <br />\n    <span class=\"padding30 font-size-17\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"3000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      that words I never say friends make fun but <br/>I tell you every day\n    </span>\n    <br />\n    <span class=\"padding30\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"6000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ And\n    </span>\n    <br />\n    <span class=\"padding50 font-size-17\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"7000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      everyone is jealous of my ride because you sit in the passenger side\n    </span>\n    <br />\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"9000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ IT'S THE SIMPLE THINGS YOU DO\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"9500\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ I JUST CAN'T GET ENOUGH OF YOU\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"10000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ IT'S THAT PERFUME THAT YOU WEAR\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"10500\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ AND\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"11000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ THE WAY YOU DO YOUR HAIR THAT I LOVE SO MUCH\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"11500\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ SO TAKE MY HAND STAY AS LONG AS\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"12000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ YOU CAN WITH THE MAN\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"12500\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ IF YOU PROMISE TO ACCOMPLISH LOVE\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"13000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ ALL ME NEED IS LOVE.\n    </span>\n    <br />\n    <span class=\"padding60\"typingAnimation [typeSpeed]=\"35\" [startDelay]=\"13000\" [hideCursorOnComplete]=\"false\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ From Your Jaehyun\n    </span>\n  </div>\n</div>\n\n\n\n<!-- <div id=\"typed-strings\">\n    <p>Typed.js is an\n      <strong>Awesome</strong> library.</p>\n    <p>It\n      <em>types</em> out sentences.</p>\n  </div>\n  <span id=\"typed\" #typetext></span> -->\n<!-- <h2>\n  <span typingAnimation [typeSpeed]=\"35\" [startDelay]=\"1000\" (complete)=\"onComplete()\">\n    I love you I love you I love you\n    <br> I love you I love you I love you I love you I love you\n  </span>\n</h2> -->\n<!-- <ul>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n  </li>\n</ul>\n -->"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n\n<div class=\"sameHeight\">\n  <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n    <swiper [config]=\"config\" #usefulSwiper>\n      <div class=\"swiper-wrapper\">\n        <div class=\"swiper-slide\">\n          <div style=\"text-align:center\">\n            <h1>\n              My Dain !\n            </h1>\n            <img width=\"300\" src=\"https://cdn.pixabay.com/photo/2017/01/20/08/41/hearts-1994273_960_720.png\">\n          </div>\n        </div>\n        <div class=\"swiper-slide\">\n          <div style=\"text-align:center\">\n            <h1>\n              I LOVE YOU\n            </h1>\n            <img width=\"300\" src=\"https://cdn.pixabay.com/photo/2017/01/20/08/41/hearts-1994273_960_720.png\">\n          </div>\n        </div>\n        <div class=\"swiper-slide\">Slide 3</div>\n        <div class=\"swiper-slide\">Slide 4</div>\n        <div class=\"swiper-slide\">Slide 5</div>\n        <div class=\"swiper-slide\">Slide 6</div>\n        <div class=\"swiper-slide\">Slide 7</div>\n        <div class=\"swiper-slide\">Slide 8</div>\n        <div class=\"swiper-slide\">Slide 9</div>\n        <div class=\"swiper-slide\">Slide 10</div>\n      </div>\n      <!-- Add Pagination -->\n      <div class=\"swiper-pagination\"></div>\n      <!-- Add Arrows -->\n      <!-- <div class=\"swiper-button-next\"></div>\n      <div class=\"swiper-button-prev\"></div> -->\n    </swiper>\n    <!-- \n    <div class=\"reveal\">\n      <div class=\"slides\">\n        <section>\n          <div style=\"text-align:center\">\n            <h1>\n              My Dain !\n            </h1>\n            <img width=\"300\" src=\"https://cdn.pixabay.com/photo/2017/01/20/08/41/hearts-1994273_960_720.png\">\n          </div>\n        </section>\n        <section>\n          <div style=\"text-align:center\">\n            <h1>\n              I LOVE YOU\n            </h1>\n            <img width=\"300\" src=\"https://cdn.pixabay.com/photo/2017/01/20/08/41/hearts-1994273_960_720.png\">\n          </div>\n        </section>\n      </div>\n    </div> -->\n\n  </div>\n  <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6 typingArea\">\n    <span typingAnimation [typeSpeed]=\"35\" [startDelay]=\"1000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ For Her\n    </span>\n    <br />\n    <span class=\"padding15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"2000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ I love you\n    </span>\n    <br />\n    <span class=\"padding30 font-size-17\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"3000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      that words I never say friends make fun but\n      <br/>I tell you every day\n    </span>\n    <br />\n    <span class=\"padding30\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"6000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ And\n    </span>\n    <br />\n    <span class=\"padding50 font-size-17\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"7000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      everyone is jealous of my ride because you sit in the passenger side\n    </span>\n    <br />\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"9000\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ IT'S THE SIMPLE THINGS YOU DO\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"9500\" [hideCursorOnComplete]=\"true\" (complete)=\"onTypingAnimationComplete()\">\n      □ I JUST CAN'T GET ENOUGH OF YOU\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"10000\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ IT'S THAT PERFUME THAT YOU WEAR\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"10500\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ AND\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"11000\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ THE WAY YOU DO YOUR HAIR THAT I LOVE SO MUCH\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"11500\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ SO TAKE MY HAND STAY AS LONG AS\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"12000\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ YOU CAN WITH THE MAN\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"12500\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ IF YOU PROMISE TO ACCOMPLISH LOVE\n    </span>\n    <br />\n    <span class=\"padding15 font-size-15\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"13000\" [hideCursorOnComplete]=\"true\"\n      (complete)=\"onTypingAnimationComplete()\">\n      □ ALL ME NEED IS LOVE.\n    </span>\n    <br />\n    <span class=\"padding60\" typingAnimation [typeSpeed]=\"35\" [startDelay]=\"13000\" [hideCursorOnComplete]=\"false\" (complete)=\"onTypingAnimationComplete()\">\n      ▷ From Your Jaehyun\n    </span>\n  </div>\n</div>\n\n\n\n<!-- <div id=\"typed-strings\">\n    <p>Typed.js is an\n      <strong>Awesome</strong> library.</p>\n    <p>It\n      <em>types</em> out sentences.</p>\n  </div>\n  <span id=\"typed\" #typetext></span> -->\n<!-- <h2>\n  <span typingAnimation [typeSpeed]=\"35\" [startDelay]=\"1000\" (complete)=\"onComplete()\">\n    I love you I love you I love you\n    <br> I love you I love you I love you I love you I love you\n  </span>\n</h2> -->\n<!-- <ul>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n  </li>\n</ul>\n -->"
 
 /***/ }),
 
@@ -48,6 +48,8 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_useful_swiper__ = __webpack_require__("../../../../angular2-useful-swiper/lib/swiper.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular2_useful_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angular2_useful_swiper__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,9 +63,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // Can also be included with a regular script tag
 // import { Typed } from 'typed.js';
 // import { Typed } from './typed';
+
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app';
+        this.config = {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        };
     }
     // typed: Typed
     // typed: any;
@@ -79,12 +89,17 @@ var AppComponent = (function () {
         //   smartBackspace: true, // Default value
         //   typeSpeed: 40
         // });
+        this.usefulSwiper.swiper.slideNext();
     };
     AppComponent.prototype.onTypingAnimationComplete = function () {
         console.log('#TYPING ANIMATION COMPLETE');
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('usefulSwiper'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_angular2_useful_swiper__["SwiperComponent"])
+    ], AppComponent.prototype, "usefulSwiper", void 0);
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -107,6 +122,8 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__ = __webpack_require__("../../../../angular-typing-animation/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__ = __webpack_require__("../../../../angular2-useful-swiper/lib/swiper.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -117,17 +134,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__["a" /* TypingAnimationDirective */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */]
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__["SwiperModule"]
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -170,7 +189,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
