@@ -97,7 +97,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml,body {\n    height: 100vh;\n    margin:0; \n    padding:0;\n    background: black;\n    /* overflow: auto; */\n}\n\n.body-main{\n    background: black;\n}\n\n.body-invitation{\n    \n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml,body {\n    height: 100vh;\n    margin:0; \n    padding:0;\n    background: black;\n    /* overflow: auto; */\n}\n\n.body-main{\n    background: black;\n}\n\n.body-invitation{\n    /* background: url(\"/assets/images/inviteBackGround.jpg\") no-repeat center center fixed; \n    -webkit-background-size: cover;\n    -moz-background-size: cover;\n    -o-background-size: cover;\n    background-size: cover; */\n}", ""]);
 
 // exports
 
