@@ -97,7 +97,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nhtml,body {\n    background: black;\n    /* overflow: auto; */\n}\n\n.typingArea {\n    font-size: 20px;\n    font-weight: bold;\n    color: white;\n    font-family: consolas;\n}\n\n\n.sameHeight {\n    /* height: 500px; */\n}\n  \nspan{\n    display: inline-block;\n}\n\n.font-size-15{\n    font-size: 15px;\n}\n\n.font-size-17{\n    font-size: 17px;\n}\n\n.padding10{\n    padding: 0 10px;\n}\n\n.padding15{\n    padding: 0 15px;\n}\n\n.padding20{\n    padding: 0 20px;\n}\n\n.padding25{\n    padding: 0 25px;\n}\n\n.padding30{\n    padding: 0 30px;\n}\n\n.padding40{\n    padding: 0 40px;\n}\n\n.padding50{\n    padding: 0 50px;\n}\n\n.padding60{\n    padding: 20px 60px;\n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml,body {\n    height: 100vh;\n    margin:0; \n    padding:0;\n    background: black;\n    /* overflow: auto; */\n}\n\n.body-main{\n    background: black;\n}\n\n.body-invitation{\n    \n}", ""]);
 
 // exports
 
