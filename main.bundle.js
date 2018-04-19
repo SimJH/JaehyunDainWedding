@@ -147,7 +147,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".InvitationBackGround{\r\n    width: 100%;\r\n    height: 600px;\r\n    background: url(\"/JaehyunDainWedding/assets/images/inviteBackGround.jpg\") no-repeat;\r\n    background-size: cover;\r\n}", ""]);
+exports.push([module.i, ".InvitationBackGround{\r\n    width: 100%;\r\n    height: 650px;\r\n    background: url(\"/JaehyunDainWedding/assets/images/inviteBackGround.jpg\") no-repeat center center;\r\n    background-size: cover;\r\n}\r\n\r\n.buttonPosition{\r\n    bottom: 40px;\r\n    top: 2rem;\r\n    right: 2rem;\r\n    position: absolute;\r\n    text-align: center;\r\n    color: #ED0000;\r\n}\r\n\r\n.button{\r\n    color: white;\r\n    font-size: 3rem;\r\n    background: transparent;\r\n    border:2px solid white;\r\n    padding: 1.5rem 1rem;\r\n    border-radius: 5rem;\r\n   -moz-border-radius: 5rem;\r\n   -webkit-border-radius: 5rem;\r\n   -o-border-radius: 5rem;\r\n\r\n}\r\n", ""]);
 
 // exports
 
@@ -160,7 +160,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/invitation/invitation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n\n</div>\n<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\" style=\"padding:0px;\">\n  <div class=\"InvitationBackGround\" (click)=\"GoMain()\">\n\n  </div>\n</div>\n<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n\n</div>"
+module.exports = "<div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-4\">\n\n</div>\n<div class=\"col-xs-12 col-sm-6 col-md-8 col-lg-4\" style=\"padding:0px;\">\n  <div class=\"InvitationBackGround\">\n\n  </div>\n</div>\n<div class=\"col-xs-12 col-sm-3 col-md-2 col-lg-4\">\n\n</div>\n<div class=\"buttonPosition\">\n  <input type=\"button\" class=\"button\" value=\"Click\" (click)=\"GoMain()\">\n</div>"
 
 /***/ }),
 
