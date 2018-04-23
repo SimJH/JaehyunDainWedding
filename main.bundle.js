@@ -209,10 +209,13 @@ var InvitationComponent = (function () {
         }
     };
     InvitationComponent.prototype.CopyAddress = function () {
-        this.elementRef.nativeElement.focus();
-        this.elementRef.nativeElement.select();
-        document.execCommand('Copy');
-        alert("3198 Hamilton Mill Rd, Buford, GA 30519 copied");
+        // this.elementRef.nativeElement.focus();
+        // this.elementRef.nativeElement.select();
+        // document.execCommand('Copy');
+        // alert("3198 Hamilton Mill Rd, Buford, GA 30519 copied");
+        if (confirm("Do you want to go to Google Map?")) {
+            window.location.href = 'https://www.google.co.kr/maps/place/3198+Hamilton+Mill+Rd,+Buford,+GA+30519/@34.0933165,-83.9315891,17z';
+        }
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('hiddentext'),
