@@ -212,7 +212,7 @@ var InvitationComponent = (function () {
         this.elementRef.nativeElement.focus();
         this.elementRef.nativeElement.select();
         document.execCommand('Copy');
-        alert("Address copied");
+        alert("3198 Hamilton Mill Rd, Buford, GA 30519 copied");
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('hiddentext'),
